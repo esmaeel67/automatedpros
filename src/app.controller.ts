@@ -18,6 +18,8 @@ export class AppController {
     let indexes = [];
     for (let i = 0; i <= arr.length; i++) {
       for (let j = i + 1; j < arr.length; j++) {
+        // check array index i + next number equal target
+        // and check this number is not exists in the indexes array
         if (
           target === arr[i] + arr[j] &&
           !indexes.includes(i) &&
